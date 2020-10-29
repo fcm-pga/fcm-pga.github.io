@@ -153,10 +153,10 @@
 			let energiaPorPersona = Math.ceil(energia / personas);
 			let aguaPorPersona = Math.ceil(agua / personas);
 
-			if(energiaPorPersona > 70){
+			if(energiaPorPersona > 42){
 				$("#energia-alto").show();
 				$("#energia-normal").hide();
-				$("#energia-alto .excedido").html("" + energiaPorPersona - 70 + "kw");
+				$("#energia-alto .excedido").html("" + energiaPorPersona - 42 + "kw");
 			}
 			else{
 				$("#energia-alto").hide();
