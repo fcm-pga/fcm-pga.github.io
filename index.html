@@ -156,7 +156,7 @@
 			if(energiaPorPersona > 42){
 				$("#energia-alto").show();
 				$("#energia-normal").hide();
-				$("#energia-alto .excedido").html("" + energiaPorPersona - 42 + "kw");
+				$("#energia-alto .excedido").html("" + energia - personas * 42 + "kw");
 			}
 			else{
 				$("#energia-alto").hide();
@@ -164,7 +164,7 @@
 			}
 
 			if(aguaPorPersona > 4){
-				$("#agua-alto .excedido").html("" + aguaPorPersona - 4 + "m<sup>3</sup>");
+				$("#agua-alto .excedido").html("" + agua - personas * 4 + "m<sup>3</sup>");
 				$("#agua-alto").show();
 				$("#agua-normal").hide();
 			}
